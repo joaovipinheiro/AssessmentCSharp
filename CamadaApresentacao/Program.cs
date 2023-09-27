@@ -12,9 +12,9 @@ namespace CamadaApresentacao
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Escolha onde quer salvar os dados?: ");
-            Console.WriteLine("(1)- Disco Local");
-            Console.WriteLine("(2)- Memoria \n");
+            Console.WriteLine("Escolha onde vai querer salvar os dados: ");
+            Console.WriteLine("[1] - Disco Local");
+            Console.WriteLine("[2] - Memoria \n");
             Console.Write("Escolha uma um número: ");
             string escolhaArquivo = Console.ReadLine();
 
@@ -37,14 +37,14 @@ namespace CamadaApresentacao
             while (true)
             {
 
-                Console.WriteLine("- - - Menu - CRUD - - -");
-                Console.WriteLine("(1)- Inclusão");
-                Console.WriteLine("(2)- Pesquisa");
-                Console.WriteLine("(3)- Alteração");
-                Console.WriteLine("(4)- Exclusão");
-                Console.WriteLine("(5)- Sair");
-                Console.WriteLine("- - - - - - - - - - \n");
-                Console.Write("Escolha uma um numero: ");
+                Console.WriteLine("- - MENU - CRUD - -");
+                Console.WriteLine("[1] - Inclusão");
+                Console.WriteLine("[2] - Pesquisa");
+                Console.WriteLine("[3] - Alteração");
+                Console.WriteLine("[4] - Exclusão");
+                Console.WriteLine("[5] - Sair");
+                Console.WriteLine("- - - - - - - -  - - \n");
+                Console.Write("Escolha uma um número: ");
 
 
                 int num;
@@ -98,7 +98,7 @@ namespace CamadaApresentacao
 
         private static void IncluirBrinquedo()
         {
-            Console.WriteLine("\nInclusão de brinquedo");
+            Console.WriteLine("Inclusão de brinquedo");
 
             Brinquedo brinquedo = new Brinquedo();
 
