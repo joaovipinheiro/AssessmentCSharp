@@ -30,13 +30,9 @@ namespace CamadaApresentacao
                 return;
             }
 
-            Console.WriteLine("Brinquedos Cadastrados: ");
             var ultimosBrinquedos = repositorio.Listar();
             ExibirBrinquedosCadastrados(ultimosBrinquedos);
             Brinquedo brinquedo = new Brinquedo();
-
-
-            
 
             while (true)
             {

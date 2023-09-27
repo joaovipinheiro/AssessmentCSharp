@@ -53,9 +53,9 @@ namespace CamadaDados
             }
         }
 
-        public List<Brinquedo> Pesquisar(string termo)
+        public List<Brinquedo> Pesquisar(string nome)
         {
-            return _brinquedos.Where(b => b.Nome.Contains(termo, StringComparison.OrdinalIgnoreCase)).ToList();
+            return _brinquedos.Where(b => b.Nome.Contains(nome, StringComparison.OrdinalIgnoreCase)).ToList();
         }
     }
 }
