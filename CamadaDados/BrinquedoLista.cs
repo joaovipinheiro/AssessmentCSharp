@@ -7,11 +7,11 @@ using CamadaNegocios;
 
 namespace CamadaDados
 {
-    public class BrinquedoList : IRepositorio
+    public class BrinquedoLista : IRepositorio
     {
         private List<Brinquedo> _brinquedos;
 
-        public BrinquedoList()
+        public BrinquedoLista()
         {
             _brinquedos = new List<Brinquedo>();
         }
