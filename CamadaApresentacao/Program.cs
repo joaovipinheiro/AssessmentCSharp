@@ -16,17 +16,21 @@ namespace CamadaApresentacao
 
             while (true)
             {
-                Console.WriteLine("\nMenu - CRUD: ");
+                Console.WriteLine("\n- - - - - - - - - - ");
+                Console.WriteLine("Menu - CRUD");
                 Console.WriteLine("1- Inclusão");
                 Console.WriteLine("2- Pesquisa");
                 Console.WriteLine("3- Alteração");
                 Console.WriteLine("4- Exclusão");
-                Console.WriteLine("5- Sair \n");
+                Console.WriteLine("5- Sair");
+                Console.WriteLine("- - - - - - - - - - \n");
+                Console.Write("Escolha uma um numero: ");
 
-                int opcao;
-                if (int.TryParse(Console.ReadLine(), out opcao))
+
+                int num;
+                if (int.TryParse(Console.ReadLine(), out num))
                 {
-                    switch (opcao)
+                    switch (num)
                     {
                         case 1:
                             IncluirBrinquedo();
@@ -245,7 +249,6 @@ namespace CamadaApresentacao
                 Console.WriteLine("ID inválido.");
             }
         }
-
         private static void ExibirDetalhes(Brinquedo brinquedo)
         {
             Console.WriteLine($"Nome: {brinquedo.Nome}");
