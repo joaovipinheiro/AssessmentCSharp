@@ -16,14 +16,15 @@ namespace CamadaApresentacao
             Console.WriteLine("[1] - Disco Local");
             Console.WriteLine("[2] - Memoria \n");
             Console.Write("Escolha uma um número: ");
+
             string escolhaArquivo = Console.ReadLine();
 
             if (escolhaArquivo == "1") 
             {
-                repositorio = new BrinquedoArquivo(); //Disco
+                repositorio = new BrinquedoArquivo(); //Disco 
             } else if (escolhaArquivo == "2")
             {
-                repositorio = new BrinquedoLista();    
+                repositorio = new BrinquedoLista();   //Memoria
             } else
             {
                 Console.WriteLine("Opção inválida. Programa será encerrado!");
@@ -36,16 +37,13 @@ namespace CamadaApresentacao
 
             while (true)
             {
-
-                Console.WriteLine("- - MENU - CRUD - -");
+                Console.WriteLine("MENU - CRUD");
                 Console.WriteLine("[1] - Inclusão");
                 Console.WriteLine("[2] - Pesquisa");
                 Console.WriteLine("[3] - Alteração");
                 Console.WriteLine("[4] - Exclusão");
-                Console.WriteLine("[5] - Sair");
-                Console.WriteLine("- - - - - - - -  - - \n");
+                Console.WriteLine("[5] - Sair\n");
                 Console.Write("Escolha uma um número: ");
-
 
                 int num;
                 if (int.TryParse(Console.ReadLine(), out num))
@@ -77,6 +75,7 @@ namespace CamadaApresentacao
                 }
             }
         }
+
         static void ExibirBrinquedosCadastrados(List<Brinquedo> ultimosBrinquedos)
         {
             Console.WriteLine("Últimos Brinquedos Cadastrados:");
@@ -148,6 +147,7 @@ namespace CamadaApresentacao
             repositorio.Incluir(brinquedo);
             Console.WriteLine("Brinquedo cadastrado com sucesso!");
         }
+
         private static void PesquisarBrinquedo()
         {
             Console.WriteLine("\nPesquisa de brinquedo");
