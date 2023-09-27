@@ -12,8 +12,6 @@ namespace CamadaApresentacao
 
         static void Main(string[] args)
         {
-            repositorio = new BrinquedoArquivo();
-
             Console.WriteLine("Escolha onde quer salvar os dados?: ");
             Console.WriteLine("(1)- Disco Local");
             Console.WriteLine("(2)- Memoria \n");
@@ -33,32 +31,12 @@ namespace CamadaApresentacao
             }
 
             Console.WriteLine("Brinquedos Cadastrados: ");
+            var ultimosBrinquedos = repositorio.Listar();
+            ExibirBrinquedosCadastrados(ultimosBrinquedos);
             Brinquedo brinquedo = new Brinquedo();
-            ExibirBrinquedosCadastrados(BrinquedoLista());
 
 
-           /* int op;
-            if (int.TryParse(Console.ReadLine(), out op))
-            {
-                switch (op)
-                {
-                    case 1:
-                        repositorio new BrinquedoArquivo();
-                        break;
-                    case 2:
-                        repositorio new BrinquedoLista();
-                        break;
-                    case 5:
-                        return;
-                    default:
-                        Console.WriteLine("Opção inválida. Tente novamente. \n");
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Opção inválida. Tente novamente.\n");
-            } */
+            
 
             while (true)
             {
@@ -113,7 +91,7 @@ namespace CamadaApresentacao
             }
             else
             {
-                int maxItens = Math.Min(5, ultimosBrinquedos.Count); 
+                int maxItens = Math.Min(5, ultimosBrinquedos.Count);
                 for (int i = 0; i < maxItens; i++)
                 {
                     Brinquedo brinquedo = ultimosBrinquedos[i];

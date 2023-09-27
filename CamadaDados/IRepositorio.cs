@@ -12,7 +12,7 @@ namespace CamadaDados
         List<Brinquedo> Listar();
         Brinquedo BuscarPorId(Guid id);
         void Incluir(Brinquedo brinquedo);
-        void Alterar(Brinquedo brinquedo);
+        void Alterar(Brinquedo brinquedo);zz
         void Excluir(Guid id);
         List<Brinquedo> Pesquisar(string termo);
     }
