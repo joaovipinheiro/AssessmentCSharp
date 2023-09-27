@@ -297,5 +297,6 @@ namespace CamadaApresentacao
             Console.WriteLine($"Disponível: {brinquedo.Disponivel}");
             Console.WriteLine(brinquedo.CalcTempoEstoque());
         }
+
     }
 }
